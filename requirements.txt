@@ -1,0 +1,13 @@
+pip>=23.0.0
+setuptools>=65.0.0
+numpy>=1.26.4
+pandas>=2.2.3
+scikit-learn>=1.5.1
+matplotlib>=3.9.3
+streamlit==1.39.0
+nltk>=3.9.1
+joblib>=1.2.0
+seaborn>=0.13.2
+streamlit-authenticator>=0.4.1
+supabase>=1.0.0
+python-dotenv>=1.0.0
