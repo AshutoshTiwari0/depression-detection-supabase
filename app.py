@@ -11,8 +11,10 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_URL = os.getenv("SUPABASE_URL").strip()
+SUPABASE_KEY = os.getenv("SUPABASE_KEY").strip()
+#print(SUPABASE_KEY)
+#print(SUPABASE_URL)
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 def sign_up_user(email, password):
     try:
