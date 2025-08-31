@@ -35,13 +35,11 @@ Make sure to add the required API keys / credentials in Streamlit secrets for sm
 
 📌 Future Improvements
 
-1.Improve classification for multi-class emotions (not just binary)
+1.Add more advanced deep learning models (e.g., BERT, RoBERTa)
 
-2.Add more advanced deep learning models (e.g., BERT, RoBERTa)
+2.Better UI/UX with modern themes
 
-3.Better UI/UX with modern themes
-
-4.Integration with external APIs for mental health resources
+3.Integration with external APIs for mental health resources
 
 🤝 Contribution
 
