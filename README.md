@@ -17,10 +17,10 @@ This project is a web application built with **Streamlit** that detects depressi
 
 # Clone the repository
 ```bash
-git clone https://github.com/your-username/depression-detection.git
+git clone https://github.com/your-username/depression-detection-supabase.git
 ```
 ```bash
-cd depression-detection
+cd depression-detection-supabase
 ```
 # Install dependencies
 ```bash 
