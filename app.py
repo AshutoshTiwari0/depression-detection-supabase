@@ -11,11 +11,13 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-SUPABASE_URL = 'https://eluaznpewqpaswxnxzmi.supabase.co'
-SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVsdWF6bnBld3FwYXN3eG54em1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY1NDUwODgsImV4cCI6MjA3MjEyMTA4OH0.uzUKy5GSvuSbo2mmtfPQ-9BwfJmgJ8vcEAZCNFvzkec'
+
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_KEY")
+supabase = create_client(url, key)
 #print(SUPABASE_KEY)
 #print(SUPABASE_URL)
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(url, key)
 def sign_up_user(email, password):
     try:
         user = supabase.auth.sign_up({
